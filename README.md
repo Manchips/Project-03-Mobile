@@ -23,7 +23,8 @@ All updates will be seen on the mobile version and website.
 mySQL --> Spring Boot --> Thymeleaf --> Android
 
 ### WireFrame:
-![Project03_Mockup](https://user-images.githubusercontent.com/78055486/162646757-69418602-1c31-4f71-a1d7-aa389427abfc.PNG)
+<img width="1251" alt="Wireframe" src="https://user-images.githubusercontent.com/78055486/162647601-7ac7f2cc-4769-4b58-bef7-43e200e4426c.PNG">
+
 
 ### ERD:
 <img width="497" alt="erd_project_3" src="https://user-images.githubusercontent.com/78055486/162646746-002db1c5-bc71-4791-967e-e44d8a9b8887.png">
