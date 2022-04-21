@@ -1,4 +1,4 @@
-package com.example.project3_dao;
+package com.example.project3_mobile;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

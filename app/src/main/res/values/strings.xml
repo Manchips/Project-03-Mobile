@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Project3_dao</string>
+    <string name="app_name">Legally Distinct \n &amp; \n Dragons</string>
+    <string name="app_description">A character building and sharing tool for every adventurer!</string>
+    <string name="login_button">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="character_name">character name</string>
+    <string name="body_stat">Body</string>
+    <string name="mind_stat">Mind</string>
 </resources>

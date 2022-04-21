@@ -1,8 +1,10 @@
-package com.example.project3_dao;
+package com.example.project3_mobile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.project3_dao.R;
 
 public class MainActivity extends AppCompatActivity {
 
