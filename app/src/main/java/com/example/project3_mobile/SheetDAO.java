@@ -22,8 +22,8 @@ public interface SheetDAO {
     List<Sheet> getAllSheets();
 
     @Query("SELECT * FROM " + AppDataBase.SHEET_TABLE + " WHERE mCharName = :charname")
-    User getSheetbyCharName(String charname);
+    Sheet getSheetbyCharName(String charname);
 
     @Query("SELECT * FROM " + AppDataBase.SHEET_TABLE + " WHERE mCreatorId = :userid")
-    User getSheetbyCreator(int userid);
+    Sheet getSheetbyCreator(int userid);
 }
