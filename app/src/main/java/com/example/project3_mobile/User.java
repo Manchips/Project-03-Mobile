@@ -1,10 +1,7 @@
-package com.example.project3_dao;
+package com.example.project3_mobile;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity(tableName = AppDataBase.USER_TABLE)
 public class User {

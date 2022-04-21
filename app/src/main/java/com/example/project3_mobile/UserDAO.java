@@ -1,4 +1,4 @@
-package com.example.project3_dao;
+package com.example.project3_mobile;
 
 import java.util.List;
 import androidx.room.Dao;
