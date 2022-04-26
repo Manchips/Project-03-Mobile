@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 import java.util.Objects;
 
-@Entity(tableName = AppDataBase.SHEET_TABLE)
+@Entity(tableName = AppDatabase.SHEET_TABLE)
 public class Sheet {
 
     @PrimaryKey(autoGenerate = true)

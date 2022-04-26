@@ -3,7 +3,7 @@ package com.example.project3_mobile;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = AppDataBase.USER_TABLE)
+@Entity(tableName = AppDatabase.USER_TABLE)
 public class User {
 
     @PrimaryKey(autoGenerate = true)
