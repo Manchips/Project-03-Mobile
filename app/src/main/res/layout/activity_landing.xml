@@ -5,6 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/landingCreateAccountButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/landingLoginButton"
+        app:layout_constraintVertical_bias="0.818" />
+
     <TextView
         android:id="@+id/landingTitle"
         android:layout_width="wrap_content"
@@ -46,4 +62,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/landingTitle"
         app:layout_constraintVertical_bias="0.279" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
