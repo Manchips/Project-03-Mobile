@@ -9,25 +9,23 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
-import java.util.List;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
     private EditText mUserText, mPasswordText;
+    private Button mRegisterButton;
 
     private UserDAO userDAO;
-    private List<User> users;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_landing);
+        setContentView(R.layout.activity_create_account);
 
         mUserText = findViewById(R.id.editTextUsername);
         mPasswordText = findViewById(R.id.editTextPassword);
-        Button mRegisterButton = findViewById(R.id.registerButton);
+
+        mRegisterButton = findViewById(R.id.registerButton);
 
         userDAO = Room.databaseBuilder(this, AppDatabase.class, AppDatabase.DB_NAME)
                 .allowMainThreadQueries()
@@ -47,7 +45,7 @@ public class CreateAccountActivity extends AppCompatActivity {
             Toast.makeText(CreateAccountActivity.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
         } else if (mUserText.getText().toString().equals("admin")) {
             Toast.makeText(CreateAccountActivity.this, "Invalid Username", Toast.LENGTH_SHORT).show();
-        } else if (mUserText.getText().toString().equals(userDAO.getUserbyUsername(mUserText.getText().toString()))){
+        } else if (mUserText.getText().toString().equals(userDAO.getUserbyUsername(mUserText.getText().toString()).getUsername())){
             Toast.makeText(CreateAccountActivity.this, "Username already in use", Toast.LENGTH_SHORT).show();
         }else {
             userDAO.insert(user);
