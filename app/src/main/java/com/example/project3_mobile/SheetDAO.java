@@ -18,12 +18,12 @@ public interface SheetDAO {
     @Delete
     void delete(Sheet sheet);
 
-    @Query("SELECT * FROM " + AppDataBase.SHEET_TABLE + " ORDER BY mCharName ASC")
+    @Query("SELECT * FROM " + AppDatabase.SHEET_TABLE + " ORDER BY mCharName ASC")
     List<Sheet> getAllSheets();
 
-    @Query("SELECT * FROM " + AppDataBase.SHEET_TABLE + " WHERE mCharName = :charname")
-    User getSheetbyCharName(String charname);
+    @Query("SELECT * FROM " + AppDatabase.SHEET_TABLE + " WHERE mCharName = :charname")
+    Sheet getSheetbyCharName(String charname);
 
-    @Query("SELECT * FROM " + AppDataBase.SHEET_TABLE + " WHERE mCreatorId = :userid")
-    User getSheetbyCreator(int userid);
+    @Query("SELECT * FROM " + AppDatabase.SHEET_TABLE + " WHERE mCreatorId = :userid")
+    Sheet getSheetbyCreator(int userid);
 }

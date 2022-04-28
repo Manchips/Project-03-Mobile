@@ -18,13 +18,13 @@ public interface UserDAO {
     @Delete
     void delete(User user);
 
-    @Query("SELECT * FROM " + AppDataBase.USER_TABLE + " ORDER BY mUsername ASC")
+    @Query("SELECT * FROM " + AppDatabase.USER_TABLE + " ORDER BY mUsername ASC")
     List<User> getAllUsers();
 
-    @Query("SELECT * FROM " + AppDataBase.USER_TABLE + " WHERE mUsername = :username")
+    @Query("SELECT * FROM " + AppDatabase.USER_TABLE + " WHERE mUsername = :username")
     User getUserbyUsername(String username);
 
-    @Query("SELECT * FROM " + AppDataBase.USER_TABLE + " WHERE mUserId = :userid")
+    @Query("SELECT * FROM " + AppDatabase.USER_TABLE + " WHERE mUserId = :userid")
     User getUserbyUserId(int userid);
 
 }
