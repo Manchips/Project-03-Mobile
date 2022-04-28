@@ -1,5 +1,6 @@
 package com.example.project3_mobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -50,6 +51,8 @@ public class CreateAccountActivity extends AppCompatActivity {
         }else {
             userDAO.insert(user);
             Toast.makeText(CreateAccountActivity.this, "Account successfully created", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            startActivity(intent);
         }
     }
 }
