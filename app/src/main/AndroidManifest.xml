@@ -11,6 +11,9 @@
         android:theme="@style/Theme.Project3_dao">
         <activity android:name=".LoginActivity">
         </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".CreateAccountActivity"></activity>
         <activity
             android:name="com.example.project3_mobile.LandingActivity"
             android:exported="true">
