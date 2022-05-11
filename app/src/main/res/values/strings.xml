@@ -7,4 +7,8 @@
     <string name="character_name">character name</string>
     <string name="body_stat">Body</string>
     <string name="mind_stat">Mind</string>
+    <string name="create_account">Create Account</string>
+    <string name="choose_a_password">Pick a Secure Password</string>
+    <string name="register">Register</string>
+    <string name="choose_a_username">Choose a Username</string>
 </resources>
