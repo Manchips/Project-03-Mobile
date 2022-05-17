@@ -40,12 +40,7 @@ public class LoginActivity extends AppCompatActivity {
 
         users = userDAO.getAllUsers();
 
-        mLoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                login();
-            }
-        });
+        mLoginButton.setOnClickListener(view -> login());
     }
 
     private void login() {
