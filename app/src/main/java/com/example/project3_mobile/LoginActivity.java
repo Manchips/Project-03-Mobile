@@ -5,7 +5,9 @@ package com.example.project3_mobile;
 import androidx.room.Room;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -48,6 +50,9 @@ public class LoginActivity extends AppCompatActivity {
             if (mUserText.getText().toString().equals(u.getUsername()) && mPasswordText.getText().toString().equals(u.getPassword())) {
                 Toast.makeText(LoginActivity.this, "Welcome back " + u.getUsername(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
+                intent.putExtra("USERNAME", mUserText.getText().toString());
+
                 startActivity(intent);
                 return;
             }
