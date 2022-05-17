@@ -17,4 +17,10 @@
     <string name="save_sheet">Save</string>
     <string name="sheet_delete">Delete</string>
     <string name="sheet_cancel">Cancel</string>
+
+    <string-array name="Navigation">
+        <item>Sheet Builder</item>
+        <item>My Sheets</item>
+        <item>Profile</item>
+    </string-array>
 </resources>
