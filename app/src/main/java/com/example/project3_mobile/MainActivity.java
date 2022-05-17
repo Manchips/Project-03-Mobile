@@ -17,7 +17,5 @@ public class MainActivity extends AppCompatActivity {
                 R.array.Navigation, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-
-
     }
 }
