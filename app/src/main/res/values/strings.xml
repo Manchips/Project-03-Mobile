@@ -11,6 +11,7 @@
     <string name="choose_a_password">Pick a Secure Password</string>
     <string name="register">Register</string>
     <string name="choose_a_username">Choose a Username</string>
+
     <string name="sheet_mindval">8</string>
     <string name="sheet_BodyVal">8</string>
     <string name="char_description">Insert description here</string>
@@ -23,4 +24,5 @@
         <item>My Sheets</item>
         <item>Profile</item>
     </string-array>
+
 </resources>
