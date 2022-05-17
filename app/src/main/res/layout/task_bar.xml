@@ -3,17 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/holo_blue_dark">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
+
         <ImageView
+            android:id="@+id/left_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/left_icon"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_baseline_menu_book_24"
-            />
+            android:src="@drawable/ic_baseline_menu_book_24" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -21,9 +22,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="@id/left_icon"
             android:text="Dungeons and Dragons?"
-            android:textSize="20sp"
             android:textColor="@android:color/white"
-            />
+            android:textSize="20sp" />
     </RelativeLayout>
 
 </RelativeLayout>
