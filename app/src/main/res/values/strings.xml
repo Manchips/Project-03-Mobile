@@ -7,9 +7,8 @@
     <string name="character_name">character name</string>
     <string name="body_stat">Body</string>
     <string name="mind_stat">Mind</string>
-    <string name="char_description">Description</string>
-    <string name="sheet_BodyVal">8</string>
-    <string name="sheet_mindval">8</string>
-    <string name="save_sheet">Save</string>
-    <string name="sheet_delete">Delete</string>
+    <string name="create_account">Create Account</string>
+    <string name="choose_a_password">Pick a Secure Password</string>
+    <string name="register">Register</string>
+    <string name="choose_a_username">Choose a Username</string>
 </resources>
