@@ -1,4 +1,4 @@
-package com.example.project3_mobile;
+package com.example.project3_mobile.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
+
+import com.example.project3_mobile.DAO.SheetDAO;
+import com.example.project3_mobile.DAO.UserDAO;
+import com.example.project3_mobile.Database.AppDatabase;
+import com.example.project3_mobile.Models.Sheet;
+import com.example.project3_mobile.Models.User;
+import com.example.project3_mobile.R;
 
 import java.util.List;
 
@@ -56,15 +63,15 @@ public class SheetCreatorActivity extends AppCompatActivity {
         saveSheetButton = findViewById(R.id.sheetSaveButton);
         cancelSheetButton = findViewById(R.id.sheetCancelButton);
 
-        userDAO = Room.databaseBuilder(this, AppDatabase.class, AppDatabase.DB_NAME)
+        userDAO = Room.databaseBuilder(this, AppDatabase.class, AppDatabase.USER_TABLE)
                 .allowMainThreadQueries()
                 .build()
-                .getDAO();
+                .getUserDAO();
 
-        sheetDAO = (SheetDAO) Room.databaseBuilder(this, AppDatabase.class, AppDatabase.DB_NAME)
+        sheetDAO = (SheetDAO) Room.databaseBuilder(this, AppDatabase.class, AppDatabase.SHEET_TABLE)
                 .allowMainThreadQueries()
                 .build()
-                .getDAO();
+                .getSheetDAO();
 
         saveSheetButton.setOnClickListener(view -> saveSheet());
 

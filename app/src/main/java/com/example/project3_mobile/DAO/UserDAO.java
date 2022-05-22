@@ -1,4 +1,4 @@
-package com.example.project3_mobile;
+package com.example.project3_mobile.DAO;
 
 import java.util.List;
 import androidx.room.Dao;
@@ -6,6 +6,9 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.example.project3_mobile.Database.AppDatabase;
+import com.example.project3_mobile.Models.User;
 
 @Dao
 public interface UserDAO {

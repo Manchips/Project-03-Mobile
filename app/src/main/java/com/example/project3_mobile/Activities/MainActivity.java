@@ -1,10 +1,12 @@
-package com.example.project3_mobile;
+package com.example.project3_mobile.Activities;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.project3_mobile.R;
 
 public class MainActivity extends AppCompatActivity {
     @Override

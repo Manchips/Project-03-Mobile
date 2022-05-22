@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project3_dao">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Activities.LoginActivity">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.MainActivity">
         </activity>
-        <activity android:name=".CreateAccountActivity"></activity>
-        <activity android:name=".SheetCreatorActivity"></activity>
+        <activity android:name=".Activities.CreateAccountActivity"></activity>
+        <activity android:name=".Activities.SheetCreatorActivity"></activity>
         <activity
-            android:name="com.example.project3_mobile.LandingActivity"
+            android:name="com.example.project3_mobile.Activities.LandingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

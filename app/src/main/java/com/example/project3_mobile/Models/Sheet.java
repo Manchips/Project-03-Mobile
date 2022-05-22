@@ -1,7 +1,9 @@
-package com.example.project3_mobile;
+package com.example.project3_mobile.Models;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+
+import com.example.project3_mobile.Database.AppDatabase;
 
 import java.util.Objects;
 
