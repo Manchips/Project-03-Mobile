@@ -33,10 +33,14 @@ public class CreateAccountActivity extends AppCompatActivity {
                 .build()
                 .getDAO();
 
+
+        mRegisterButton.setOnClickListener(view -> register());
+
         mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { register(); }
         });
+
     }
 
     public void register(){
